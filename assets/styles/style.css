@@ -1169,7 +1169,7 @@ footer {
   height: 100%;
   filter: brightness(60%);
   z-index: 1;
-  background-image: url(../img/happy_team.png);
+  background-image: url(../img/А5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2525,6 +2525,7 @@ canvas {
   position: fixed;
   right: 0;
   bottom: 0;
+  z-index: 300;
 }
 
 .feedback_btn {

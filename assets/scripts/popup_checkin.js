@@ -3,18 +3,18 @@ const feedbackPopup = document.querySelector('.feedback_popup');
 const feedbackCloseBtn = document.querySelector('.popup_close');
 const forms = document.querySelectorAll('.vote_block');
 const labelСheckin = document.querySelectorAll('.label_checkin');
-let currentIndex = 0;
+let currentPopupSlideIndex = 0;
 
 feedbackBtn.addEventListener('click', () => {
   feedbackBtn.classList.remove('active');
   feedbackPopup.classList.add('active');
-  forms[currentIndex].classList.add('active');
+  forms[currentPopupSlideIndex].classList.add('active');
 });
 
 feedbackCloseBtn.addEventListener('click', () => {
   feedbackPopup.classList.remove('active');
   feedbackBtn.classList.add('active');
-  currentIndex = 0;
+  currentPopupSlideIndex = 0;
   forms.forEach(form => form.classList.remove('active'));
   forms[0].classList.add('active');
 });
@@ -33,15 +33,15 @@ submitBtns.forEach((btn) => {
       }
     }
 
-    forms[currentIndex].classList.remove('active');
+    forms[currentPopupSlideIndex].classList.remove('active');
     
-    currentIndex++;
+    currentPopupSlideIndex++;
 
-    if (currentIndex < forms.length) {
-      forms[currentIndex].classList.add('active');
+    if (currentPopupSlideIndex < forms.length) {
+      forms[currentPopupSlideIndex].classList.add('active');
     } else {
-      currentIndex = forms.length - 1;
-      forms[currentIndex].classList.add('active');
+      currentPopupSlideIndex = forms.length - 1;
+      forms[currentPopupSlideIndex].classList.add('active');
     }
   });
 });

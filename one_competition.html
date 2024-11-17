@@ -24,29 +24,32 @@
                     </a>
                     <nav class="navigation">
                         <ul>
-                            <li><a href=""><img loading="lazy" src="assets/img/cart.svg"></a></li>
-                            <li><a href="">Магазин</a></li>
-                            <li><a href="">Матчи</a></li>
-                            <li><a href="">Новости</a></li>
-                            <li><a href="">Команда</a></li>
+                            <li><a href="cart.html"><img loading="lazy" src="assets/img/cart.svg"></a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="competitions.html">Матчи</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="team.html">Команда</a></li>
                             <li><a href="">История</a></li>
                             <li><a href="">Медиа</a></li>
-                            <li><a href="">Партнерам</a></li>
-                            <li><a href="">Билеты</a></li>
+                            <li><a href="for_partners.html">Партнерам</a></li>
+                            <li><a href="">Контакты</a></li>
                             <li class="networks">
-                                <a href=""><img loading="lazy" src="assets/img/tg.svg"></a>
-                                <a href=""><img loading="lazy" src="assets/img/youtube.svg"></a>
-                                <a href=""><img loading="lazy" src="assets/img/vk.svg"></a>
+                                <a href="#"><img loading="lazy" src="assets/img/tg.svg"></a>
+                                <a href="#"><img loading="lazy" src="assets/img/youtube.svg"></a>
+                                <a href="#"><img loading="lazy" src="assets/img/vk.svg"></a>
                             </li>
                         </ul>
                     </nav>
 
                     <div class="header_side_buttons">
-                        <a href="" class="log_in">
+                        <a href="search.html" class="search_btn">
+                            <img loading="lazy" src="assets/img/search.svg" width="42px">
+                        </a>
+                        <a href="profile.html" class="log_in">
                             <img loading="lazy" src="assets/img/login.svg" width="42px">
                         </a>
 
-                        <button class="menu_btn clear_btn">
+                        <button class="menu_btn">
                             <img src="assets/img/menu_btn.svg">
                         </button>
                     </div>
@@ -107,8 +110,6 @@
         <div class="container">
             <div class="margin_content">
                 <div class="tabs">
-                    <!-- если матч состоялся то убираем эту кнопку "Пойти на матч" 
-                     и навешиавем .active на трансляции-->
                     <div class="tab_one_competition active tickets_tab">Пойти на матч</div>
                     <div class="tab_one_competition">Трансляция</div>
                     <div class="tab_one_competition">Команда</div>
@@ -148,7 +149,6 @@
                                     <button class="add_person_btn" type=button><span>+</span> Добавить болельщика</button>
                                     <div class="adding_person_bock">
                                         <div class="small_heading">Дополнительные билеты:</div>
-                                        <!-- здесь поля для доп билетов появляются -->
                                     </div>
                                 </div>
                                 <button class="next_btn">Далее →</button>
@@ -160,7 +160,6 @@
                 <div class="stream">
                     <div class="heading">Трансляция</div>
                     <div class="one_competition_media_section">
-                        <!-- если записи стрима или самого стрима нет => .no_media в .one_competition_media_section ↑ -->
                         <div class="no_media">
                             <dotlottie-player src="https://lottie.host/8476df42-7ef8-48b2-893f-c03f70f2d29a/ojpfNf37L1.json" background="transparent" speed="1" style="width: 150px; height: 150px;" load="lazy" loop autoplay></dotlottie-player>
                             <p>Запись матча появится позже...</p>
@@ -168,7 +167,6 @@
                         <div class="stream_wrapper">
                             <iframe src="https://vk.com/video_ext.php?oid=-85447322&id=456241574&hd=3" width="1535" height="570" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <!-- здесь наверно будет текстовая транса -->
                         <div class="small_heading my-5">Комментарии</div>
                     </div>
                 </div>
@@ -332,13 +330,11 @@
                      <p class="heading">Материалы</p>
                     <p class="small_heading">Новости</p>
                     <div class="one_competition_media_section">
-                        <!-- если новости нет => .no_media в .one_competition_media_section ↑ -->
                         <div class="no_media">
                             <dotlottie-player src="https://lottie.host/8476df42-7ef8-48b2-893f-c03f70f2d29a/ojpfNf37L1.json" background="transparent" speed="1" style="width: 150px; height: 150px;" load="lazy" loop autoplay></dotlottie-player>
                             <p>Новости с матча появятся позже...</p>
                         </div>
                         <div class="row">
-                            <!-- если новости есть => ... в row ↑ (в .one_competition_media_section ↑) -->
                             <div class="col-md-4 col-sm-6">
                                 <a href="">
                                     <div class="post_card">
